@@ -184,17 +184,58 @@ class MyApp extends StatelessWidget {
                     )),
                 Expanded(
                     flex: 2,
-                    child: Row(
-                      children: <Widget>[
-                        Container(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30),
+                      child: Row(
+                        // mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: <Widget>[
+                          Container(
                             height: 60,
                             width: 60,
                             decoration: BoxDecoration(
                               color: Color.fromARGB(255, 254, 220, 220),
                               borderRadius: BorderRadius.circular(16),
                             ),
-                            child: Icon(FontAwesomeIcons.heart)),
-                      ],
+                            child: Icon(
+                              FontAwesomeIcons.heart,
+                              color: Color.fromARGB(255, 243, 102, 108),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 30,
+                          ),
+                          // Spacer(),
+                          Container(
+                            height: 60,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              color: Color.fromARGB(255, 230, 236, 243),
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            child: Icon(
+                              Icons.near_me,
+                              color: Color.fromARGB(255, 6, 15, 98),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Container(
+                            height: 60,
+                            width: 150,
+                            decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 6, 15, 98),
+                                borderRadius: BorderRadius.circular(16)),
+                            child: Center(
+                              child: Text(
+                                'Book',
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     )),
               ],
             ),
